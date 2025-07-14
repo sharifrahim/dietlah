@@ -1,68 +1,117 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DietLah - AI Diet Companion on WhatsApp</title>
     <!-- Materialize CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+      rel="stylesheet"
+    />
     <!-- Material Icons -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-</head>
-<body class="grey lighten-4">
-    <header class="green darken-1 white-text center-align" style="padding: 60px 20px;">
-        <h1 class="flow-text" style="font-size: 2.5em; font-weight: bold;">Your AI Diet Companion on WhatsApp</h1>
-        <p class="flow-text">Snap your meal. Know your nutrients. Stay balanced.</p>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="grey lighten-4">
+    <header
+      class="green darken-1 white-text center-align"
+      style="padding: 60px 20px"
+    >
+      <h1 class="flow-text" style="font-size: 2.5em; font-weight: bold">
+        Your AI Diet Companion on WhatsApp
+      </h1>
+      <p class="flow-text">
+        Snap your meal. Know your nutrients. Stay balanced.
+      </p>
     </header>
 
     <main>
-        <section class="container section">
-            <h2 class="center-align">How It Works</h2>
-            <div class="row">
-                <div class="col s12 m3 center-align">
-                    <i class="material-icons large green-text text-darken-2">photo_camera</i>
-                    <p>Upload a photo of your food via WhatsApp</p>
-                </div>
-                <div class="col s12 m3 center-align">
-                    <i class="material-icons large green-text text-darken-2">insert_chart</i>
-                    <p>Get instant nutrient breakdown</p>
-                </div>
-                <div class="col s12 m3 center-align">
-                    <i class="material-icons large green-text text-darken-2">restaurant_menu</i>
-                    <p>Receive daily meal suggestions to stay balanced</p>
-                </div>
-                <div class="col s12 m3 center-align">
-                    <i class="material-icons large green-text text-darken-2">book</i>
-                    <p>Your diet diary is automatically updated</p>
-                </div>
-            </div>
-        </section>
+      <section class="container section">
+        <h2 class="center-align">How It Works</h2>
+        <div class="row">
+          <div class="col s12 m3 center-align">
+            <i class="material-icons large green-text text-darken-2"
+              >photo_camera</i
+            >
+            <p>Upload a photo of your food via WhatsApp</p>
+          </div>
+          <div class="col s12 m3 center-align">
+            <i class="material-icons large green-text text-darken-2"
+              >insert_chart</i
+            >
+            <p>Get instant nutrient breakdown</p>
+          </div>
+          <div class="col s12 m3 center-align">
+            <i class="material-icons large green-text text-darken-2"
+              >restaurant_menu</i
+            >
+            <p>Receive daily meal suggestions to stay balanced</p>
+          </div>
+          <div class="col s12 m3 center-align">
+            <i class="material-icons large green-text text-darken-2">book</i>
+            <p>Your diet diary is automatically updated</p>
+          </div>
+        </div>
+      </section>
 
-        <section class="container section center-align">
-            <img src="img/whatsapp-qr.png" alt="WhatsApp QR Code" class="responsive-img" style="max-width: 250px;">
-            <div class="section">
-                <a href="https://wa.me/1234567890" target="_blank" rel="noopener" class="btn-large green">Chat on WhatsApp Now</a>
-            </div>
-        </section>
+      <section class="container section center-align">
+        <div id="qrcode" class="section"></div>
+        <div class="section">
+          <a
+            href="https://wa.me/0108426793"
+            target="_blank"
+            rel="noopener"
+            class="btn-large green"
+            >Chat on WhatsApp Now</a
+          >
+        </div>
+      </section>
 
-        <section class="container section">
-            <h2 class="center-align">Features</h2>
-            <ul class="collection">
-                <li class="collection-item"><i class="material-icons left green-text text-darken-2">image_search</i>AI-powered food recognition</li>
-                <li class="collection-item"><i class="material-icons left green-text text-darken-2">person</i>Personalized meal suggestions</li>
-                <li class="collection-item"><i class="material-icons left green-text text-darken-2">library_books</i>Auto-updated diet diary</li>
-                <li class="collection-item"><i class="material-icons left green-text text-darken-2">spa</i>Nutrition tracker for balance</li>
-            </ul>
-        </section>
+      <section class="container section">
+        <h2 class="center-align">Features</h2>
+        <ul class="collection">
+          <li class="collection-item">
+            <i class="material-icons left green-text text-darken-2"
+              >image_search</i
+            >AI-powered food recognition
+          </li>
+          <li class="collection-item">
+            <i class="material-icons left green-text text-darken-2">person</i
+            >Personalized meal suggestions
+          </li>
+          <li class="collection-item">
+            <i class="material-icons left green-text text-darken-2"
+              >library_books</i
+            >Auto-updated diet diary
+          </li>
+          <li class="collection-item">
+            <i class="material-icons left green-text text-darken-2">spa</i
+            >Nutrition tracker for balance
+          </li>
+        </ul>
+      </section>
     </main>
 
     <footer class="page-footer grey lighten-3">
-        <div class="container center-align black-text" style="padding: 20px 0;">
-            &copy; 2023 DietLah. <a href="#" class="green-text text-darken-2">Privacy Policy</a>
-        </div>
+      <div class="container center-align black-text" style="padding: 20px 0">
+        &copy; 2023 DietLah.
+        <a href="#" class="green-text text-darken-2">Privacy Policy</a>
+      </div>
     </footer>
 
     <!-- Materialize JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-</body>
+    <!-- QRCode JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script>
+      const phoneNumber = "0108426793";
+      new QRCode(
+        document.getElementById("qrcode"),
+        `https://wa.me/${phoneNumber}`,
+      );
+    </script>
+  </body>
 </html>
