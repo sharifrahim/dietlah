@@ -4,87 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DietLah - Your WhatsApp Nutrition Assistant</title>
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #fdfdfd;
-            color: #333;
-        }
-        header {
-            background: linear-gradient(90deg, #00c6ff 0%, #0072ff 100%);
-            color: white;
-            padding: 60px 20px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0 0 10px;
-            font-size: 3em;
-        }
-        header p {
-            font-size: 1.2em;
-            margin: 0;
-        }
-        .features {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-        .features h2 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .feature-list {
-            list-style: none;
-            padding: 0;
-        }
-        .feature-list li {
-            background: #f5f5f5;
-            margin: 10px 0;
-            padding: 15px 20px;
-            border-radius: 5px;
-        }
-        .cta {
-            text-align: center;
-            margin: 60px 0;
-        }
-        .cta a {
-            background: #25D366;
-            color: white;
-            padding: 15px 25px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1.2em;
-        }
-        footer {
-            text-align: center;
-            padding: 20px 0;
-            background: #f0f0f0;
-        }
-    </style>
+    <!-- Materialize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <h1>DietLah</h1>
-        <p>Your WhatsApp Nutrition Assistant</p>
+<body class="grey lighten-4">
+    <header class="blue gradient lighten-1 white-text center-align" style="padding: 60px 20px;">
+        <h1 class="flow-text" style="font-size: 3em; margin-bottom: 10px;">DietLah</h1>
+        <p class="flow-text">Your WhatsApp Nutrition Assistant</p>
     </header>
 
-    <section class="features">
-        <h2>How It Works</h2>
-        <ul class="feature-list">
-            <li>Send us a photo of your meal on WhatsApp.</li>
-            <li>Receive instant nutrition facts and keep a personal food diary.</li>
-            <li>Get suggestions on your next meal to balance your diet.</li>
-        </ul>
+    <section class="container">
+        <div class="section">
+            <h2 class="center-align">How It Works</h2>
+            <ul class="collection">
+                <li class="collection-item">Send us a photo of your meal on WhatsApp.</li>
+                <li class="collection-item">Receive instant nutrition facts and keep a personal food diary.</li>
+                <li class="collection-item">Get suggestions on your next meal to balance your diet.</li>
+            </ul>
+        </div>
+        <div class="section center-align">
+            <a href="https://wa.me/1234567890" target="_blank" rel="noopener" class="btn green">Get Started on WhatsApp</a>
+        </div>
     </section>
 
-    <section class="cta">
-        <a href="https://wa.me/1234567890" target="_blank" rel="noopener">Get Started on WhatsApp</a>
-    </section>
-
-    <footer>
-        &copy; 2023 DietLah. All rights reserved.
+    <footer class="page-footer grey lighten-3">
+        <div class="container center-align black-text" style="padding: 20px 0;">
+            &copy; 2023 DietLah. All rights reserved.
+        </div>
     </footer>
+
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>
