@@ -4,116 +4,74 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DietLah - AI Diet Companion on WhatsApp</title>
-    <!-- Materialize CSS -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-      rel="stylesheet"
-    />
-    <!-- Material Icons -->
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+      .main-layout {
+        display: flex;
+        height: 100vh;
+        color: white;
+      }
+      .left {
+        flex: 7;
+        padding: 30px;
+      }
+      .right {
+        flex: 3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+      }
+      .turquoise {
+        background-color: #40e0d0;
+      }
+      .btn-turquoise {
+        background-color: #40e0d0;
+      }
+      .btn-turquoise:hover {
+        background-color: #36c1b8;
+      }
+      .steps li {
+        list-style: none;
+        margin: 10px 0;
+      }
+      .steps i {
+        vertical-align: middle;
+        margin-right: 10px;
+      }
+    </style>
   </head>
-  <body class="grey lighten-4">
-    <header
-      class="green darken-1 white-text center-align"
-      style="padding: 30px 20px"
-    >
-      <h1 class="flow-text" style="font-size: 2.5em; font-weight: bold">
-        Your AI Diet Companion on WhatsApp<br>
-        <span class="grey-text text-lighten-4">Teman Diet AI Anda di WhatsApp</span>
-      </h1>
-      <p class="flow-text">
-        Snap your meal. Know your nutrients. Stay balanced.<br>
-        <span class="grey-text text-lighten-4">Ambil gambar hidangan anda. Ketahui nutriennya. Kekal seimbang.</span>
-      </p>
-
-    <main>
-      <section class="container section">
-        <h2 class="center-align">How It Works<br><span class="grey-text text-darken-1">Cara Ia Berfungsi</span></h2>
-        <div class="row">
-          <div class="col s12 m3 center-align">
-            <i class="material-icons large green-text text-darken-2"
-              >photo_camera</i
-            >
-            <p>Upload a photo of your food via WhatsApp<br><span class="grey-text text-darken-1">Muat naik gambar makanan anda melalui WhatsApp</span></p>
-          </div>
-          <div class="col s12 m3 center-align">
-            <i class="material-icons large green-text text-darken-2"
-              >insert_chart</i
-            >
-            <p>Get instant nutrient breakdown<br><span class="grey-text text-darken-1">Dapatkan pecahan nutrien segera</span></p>
-          </div>
-          <div class="col s12 m3 center-align">
-            <i class="material-icons large green-text text-darken-2"
-              >restaurant_menu</i
-            >
-            <p>Receive daily meal suggestions to stay balanced<br><span class="grey-text text-darken-1">Terima cadangan hidangan harian untuk kekal seimbang</span></p>
-          </div>
-          <div class="col s12 m3 center-align">
-            <i class="material-icons large green-text text-darken-2">book</i>
-            <p>Your diet diary is automatically updated<br><span class="grey-text text-darken-1">Diari diet anda dikemas kini secara automatik</span></p>
-          </div>
-        </div>
-      </section>
-
-        <section class="container section">
-          <div class="row">
-            <div class="col s12 m6 center-align">
-              <div id="qrcode" class="section"></div>
-            </div>
-            <div class="col s12 m6 center-align">
-              <a href="https://wa.me/0108426793" target="_blank" rel="noopener" class="btn-large green">
-                Chat on WhatsApp Now<br><span class="grey-text text-darken-1">Bual di WhatsApp Sekarang</span>
-              </a>
-            </div>
-          </div>
-        </section>
-
-        <section class="container section">
-          <h2 class="center-align">Features<br><span class="grey-text text-darken-1">Ciri-ciri</span></h2>
-          <div class="row">
-            <div class="col s12 m6">
-              <ul class="collection">
-                <li class="collection-item">
-                  <i class="material-icons left green-text text-darken-2">image_search</i>AI-powered food recognition<br><span class="grey-text text-darken-1">Pengenalan makanan berkuasa AI</span>
-                </li>
-                <li class="collection-item">
-                  <i class="material-icons left green-text text-darken-2">person</i>Personalized meal suggestions<br><span class="grey-text text-darken-1">Cadangan makanan diperibadikan</span>
-                </li>
-              </ul>
-            </div>
-            <div class="col s12 m6">
-              <ul class="collection">
-                <li class="collection-item">
-                  <i class="material-icons left green-text text-darken-2">library_books</i>Auto-updated diet diary<br><span class="grey-text text-darken-1">Diari diet dikemas kini secara automatik</span>
-                </li>
-                <li class="collection-item">
-                  <i class="material-icons left green-text text-darken-2">spa</i>Nutrition tracker for balance<br><span class="grey-text text-darken-1">Penjejak pemakanan untuk keseimbangan</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-    </main>
-
-    <footer class="page-footer grey lighten-3">
-      <div class="container center-align black-text" style="padding: 20px 0">
-        &copy; 2023 DietLah.
-        <a href="#" class="green-text text-darken-2">Privacy Policy</a>
+  <body class="turquoise">
+    <div class="main-layout">
+      <div class="left">
+        <h1>DietLah - AI Diet Companion on WhatsApp</h1>
+        <p>Snap your meal. Know your nutrients. Stay balanced.</p>
+        <ul class="steps">
+          <li><i class="material-icons">photo_camera</i>Upload a photo of your food via WhatsApp</li>
+          <li><i class="material-icons">insert_chart</i>Get instant nutrient breakdown</li>
+          <li><i class="material-icons">restaurant_menu</i>Receive daily meal suggestions</li>
+          <li><i class="material-icons">book</i>Your diet diary is automatically updated</li>
+        </ul>
       </div>
-    </footer>
-
-    <!-- Materialize JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <!-- QRCode JS -->
+      <div class="right">
+        <div id="qrcode" class="section"></div>
+        <a href="https://wa.me/0108426793" target="_blank" rel="noopener" class="btn btn-large btn-turquoise">Chat on WhatsApp</a>
+      </div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
     <script>
       const phoneNumber = "0108426793";
       new QRCode(
         document.getElementById("qrcode"),
-        `https://wa.me/${phoneNumber}`,
+        `https://wa.me/${phoneNumber}`
       );
     </script>
   </body>
