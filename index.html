@@ -4,8 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DietLah - AI Diet Companion on WhatsApp</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <style>
       body,
       html {
@@ -16,7 +26,6 @@
       .main-layout {
         display: flex;
         height: 100vh;
-        color: white;
       }
       .left {
         flex: 7;
@@ -30,14 +39,19 @@
         justify-content: center;
         padding: 30px;
       }
-      .turquoise {
-        background-color: #40e0d0;
+      body {
+        background-color: #fff;
+        color: #000;
+        font-family: "Quicksand", sans-serif;
       }
-      .btn-turquoise {
-        background-color: #40e0d0;
+      .accent {
+        color: #40e0d0;
       }
-      .btn-turquoise:hover {
-        background-color: #36c1b8;
+      .btn-whatsapp {
+        background-color: #25d366;
+      }
+      .btn-whatsapp:hover {
+        background-color: #1ebe57;
       }
       .steps li {
         list-style: none;
@@ -49,21 +63,44 @@
       }
     </style>
   </head>
-  <body class="turquoise">
+  <body>
     <div class="main-layout">
       <div class="left">
-        <h1>DietLah - AI Diet Companion on WhatsApp</h1>
+        <h1 class="accent">DietLah - AI Diet Companion on WhatsApp</h1>
         <p>Snap your meal. Know your nutrients. Stay balanced.</p>
-        <ul class="steps">
-          <li><i class="material-icons">photo_camera</i>Upload a photo of your food via WhatsApp</li>
-          <li><i class="material-icons">insert_chart</i>Get instant nutrient breakdown</li>
-          <li><i class="material-icons">restaurant_menu</i>Receive daily meal suggestions</li>
-          <li><i class="material-icons">book</i>Your diet diary is automatically updated</li>
-        </ul>
+        <div class="card white">
+          <div class="card-content black-text">
+            <span class="card-title accent">Features</span>
+            <ul class="steps">
+              <li>
+                <i class="material-icons">photo_camera</i>Upload a photo of your
+                food via WhatsApp
+              </li>
+              <li>
+                <i class="material-icons">insert_chart</i>Get instant nutrient
+                breakdown
+              </li>
+              <li>
+                <i class="material-icons">restaurant_menu</i>Receive daily meal
+                suggestions
+              </li>
+              <li>
+                <i class="material-icons">book</i>Your diet diary is
+                automatically updated
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div class="right">
         <div id="qrcode" class="section"></div>
-        <a href="https://wa.me/0108426793" target="_blank" rel="noopener" class="btn btn-large btn-turquoise">Chat on WhatsApp</a>
+        <a
+          href="https://wa.me/0108426793"
+          target="_blank"
+          rel="noopener"
+          class="btn btn-large btn-whatsapp"
+          >Chat on WhatsApp</a
+        >
       </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
@@ -71,7 +108,7 @@
       const phoneNumber = "0108426793";
       new QRCode(
         document.getElementById("qrcode"),
-        `https://wa.me/${phoneNumber}`
+        `https://wa.me/${phoneNumber}`,
       );
     </script>
   </body>
